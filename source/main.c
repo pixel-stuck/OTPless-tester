@@ -7,8 +7,8 @@ int test(void);
 int main(void)
 {
 	draw_init((draw_s*)0x23FFFE00);
-	console_init(0xFFFFFF, 0, SCREEN_TOP);
-	draw_clear_screen(SCREEN_TOP, 0x00);
+	console_init(0xFFFFFF, 0);
+	draw_clear_screen(SCREEN_SUB, 0x00);
 
 	printf("testing...\n");
 
